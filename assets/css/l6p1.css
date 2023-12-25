@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+/*font-family: 'Oxygen Mono', monospace;*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oxygen+Mono&display=swap');
+/*font-family: 'Lobster', cursive;*/
+
+
+:root {
+  --font-size-big: 2.5rem;
+  --font-size-small: 1.5rem;
+  --space-between-grids: 3rem;
+  --grid-margin-row: 2rem;
+  --font-size-hover: 2rem;
+  --font-family-1: font-family: 'Lobster', cursive;
+  --font-family-2: font-family: 'Oxygen Mono', monospace;
+
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 75%;
+
+}
+.header {
+  position: relative;
+  background-image: url(../img/ashley-batz-betmVWGYcLY-unsplash.jpg);
+  height: 120vh;
+  width: 95vw ;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  
+}
+.logo-box {
+position: absolute;
+top: 1rem;
+left: 1.5rem;
+}
+.logo{
+  height: 10vh;
+  width: 5vw;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+nav ul {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+nav ul li {
+list-style-type: none;
+display: inline-block;
+border-radius: 35px;
+
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin: var(--grid-margin-row);
+  color: rgb(37, 33, 33);
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: rgb(114, 61, 42);
+  transition: all .2s;
+}
+.title {
+  position: absolute;
+  top: 17%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+  font-family: 'Oxygen Mono', monospace;
+  font-size: 6.7rem;
+  word-spacing: .1rem;
+  letter-spacing: .5rem;
+  color: rgb(196, 190, 190);
+
+}
+.title:hover {
+  color: rgba(165, 42, 42, 0.692);
+  transition: 1s;
+  cursor: pointer;
+}
+  .joinus {
+  position: absolute;
+  top: 65%;
+  left: 38%;
+  text-decoration: none;
+  font-family: 'Oxygen Mono', monospace;
+  color: sienna;
+  font-size: var(--font-size-big);
+  text-transform: capitalize;
+  background-color: white;
+  border-radius: 35px;
+  padding: 1rem;
+}
+.joinus:hover {
+  transform: scale(1.2) skewY(-18deg);
+  transition: .5s;
+
+}
+.twitter {
+  text-decoration: none;
+  color: #00acee;
+  position: absolute;
+  top: 1%;
+  right: 11%;
+
+}
+.twitter-icon{
+font-size: large;  
+}
+.facebook {
+  text-decoration: none;
+  color: #4267B2;
+  position: absolute;
+  top: 1%;
+  right: 9%;
+
+}
+.face-icon{
+font-size: large;  
+}
+.insta {
+  text-decoration: none;
+  color: #bc2a8d;
+  position: absolute;
+  top: 1%;
+  right: 7%;
+
+}
+.insta-icon{
+font-size: large;  
+}
+.linkedin {
+  text-decoration: none;
+  color: #0077b5;
+  position: absolute;
+  top: 1%;
+  right: 5%;
+
+}
+.linkedin-icon{
+font-size: large;  
+}
+.pinterest {
+  text-decoration: none;
+  color: #E60023;
+  position: absolute;
+  top: 1%;
+  right: 3%;
+
+}
+.pinterest-icon{
+font-size: large;  
+}
+.tiktok {
+  text-decoration: none;
+  color: #000000;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+
+}
+.tiktok-icon{
+font-size: large;  
+}
+.main {
+  width: 90vw;
+  margin: auto;
+  
+}
+.a {
+  position: relative;
+  background-color: rgba(255, 192, 203, 0.336);
+  width: 96.2%;
+  margin: auto;
+  
+}
+.colorful-heading {
+  padding-top: 3rem;
+  font-size: var(--font-size-big);
+  font-family: 'Oxygen Mono', monospace;
+  color: slategray;
+}
+
+.row {
+  margin-top: 5rem;
+  width: 100%;
+}
+.row::after /*the background color covered just the h1, so i wrote this*/
+ {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1-of-2 {
+  display: block;
+  float: left;
+  width: calc((100% - (2rem))/2);
+}
+.col-1-of-2-flip {
+  display: block;
+  float: left;
+  
+  width: calc((100% - (2rem))/2);
+}
+.content-title {
+  padding-top: 3rem;
+  text-align: center;
+  font-size: var(--font-size-big);
+  font-family: 'Lobster', cursive;
+  letter-spacing: .5rem;
+}
+.content-text {
+  padding-left: 2rem;
+  padding-top: 3rem;
+  font-size: var(--font-size-small);
+}
+.woman {
+  margin-left: 9rem;
+  width: 35vw;
+  height: 100vh;
+  
+}
+.woman::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text-center {
+  text-align: center;
+}
